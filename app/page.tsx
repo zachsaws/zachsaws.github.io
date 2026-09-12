@@ -190,7 +190,7 @@ export default function Home() {
               </article>
               <article className="life-story">
                 <small>02 / 一条没有被安排好的路</small>
-                <h3>一次不公，让我绕了很远；身体又教会我坚持的代价。</h3>
+                <h3>我绕过一段弯路，也拉断过韧带。</h3>
                 <p>
                   少年时的一次课堂冲突，让我用停止学习来回应不公，也为此付出了代价。
                   后来进入竞技健美操，一次严重的韧带损伤和漫长恢复，
@@ -229,7 +229,7 @@ export default function Home() {
               </div>
               <div className="life-panel-copy">
                 <p className="eyebrow">03 / RUNNING AS MEDITATION</p>
-                <h3>跑得够久，脑子才会安静下来。</h3>
+                <h3>很多答案，是跑到后半程才出现的。</h3>
                 <p>
                   我跑步时不听歌。身体重复一件足够简单的事，脑子里的噪声会慢慢退下去。
                   对我来说，跑步不是逃离无聊，而是主动经过它，重新获得宁静。
