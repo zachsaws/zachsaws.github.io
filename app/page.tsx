@@ -4,6 +4,7 @@ import Image from 'next/image';
 import Link from 'next/link';
 import PaperJourney from './paper-journey';
 import PaperScene from './paper-scene';
+import FlomoHeatmap from './flomo-heatmap';
 import { projects, chapters } from './site-content';
 export default function Home() {
   const [active, setActive] = useState('projects'),
@@ -304,6 +305,7 @@ export default function Home() {
             <p className="section-intro">
               从产品、渠道与经营实践里留下问题，再把当时的判断写下来。
             </p>
+            <FlomoHeatmap />
             <div className="note-list">
               <article>
                 <small>01 / 教育与增长 · 个人思考</small>
