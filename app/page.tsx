@@ -45,7 +45,7 @@ export default function Home() {
             <div className="identity">
               <span className="avatar">志</span>
               <div>
-                你好，我是王志成。<small>消费科技 · 产品与商业 · AI 实践 · 北京</small>
+                你好，我是王志成。<small>教育与消费科技 · 产品与商业 · 北京</small>
               </div>
             </div>
             <p className="kicker">一些做过的事，一些正在发生的故事。</p>
@@ -57,10 +57,6 @@ export default function Home() {
             <p className="intro">
               长期在教育与消费科技领域，把产品、内容与渠道组合起来，寻找新的增长机会。
             </p>
-            <a className="now-building" href="#open-curriculum-cn">
-              <span>NOW BUILDING</span>
-              用 AI 把一个教育问题做成公开产品 ↗
-            </a>
             <div className="actions">
               <a className="paper-button primary" href="#projects">
                 看看我做过的事 ↘
@@ -233,11 +229,10 @@ export default function Home() {
               </div>
               <div className="life-panel-copy">
                 <p className="eyebrow">03 / RUNNING AS MEDITATION</p>
-                <h3>跑步时，我不听歌。</h3>
+                <h3>跑得够久，脑子才会安静下来。</h3>
                 <p>
-                  对我来说，跑步是一种冥想。我会主动经过长时间的无聊，
-                  让身体先耗尽噪声，再重新获得宁静。冲过终点是结果，
-                  真正重要的是路上那段只有呼吸和脚步的时间。
+                  我跑步时不听歌。身体重复一件足够简单的事，脑子里的噪声会慢慢退下去。
+                  对我来说，跑步不是逃离无聊，而是主动经过它，重新获得宁静。
                 </p>
               </div>
             </article>
@@ -273,11 +268,11 @@ export default function Home() {
               </div>
               <div className="life-panel-copy">
                 <p className="eyebrow">04 / TWO INDEPENDENT LIVES</p>
-                <h3>养猫，也不把它当孩子。</h3>
+                <h3>我想让一只猫，自己认识这个世界。</h3>
                 <p>
-                  我把它当作独立的朋友：它给我陪伴，我给它安定和探索世界的自由。
-                  从两三个月大开始，我就带它出门。家只是我们共同生活的一个地点，
-                  外面的世界也应该属于它。
+                  我更愿意把它当作朋友。它很小的时候，我就开始带它出门，
+                  希望它理解外面的声音、人群和边界，再形成自己的选择。
+                  家是一处安定的住所，却不该成为它认识世界的全部。
                 </p>
                 <a
                   className="life-video-link"

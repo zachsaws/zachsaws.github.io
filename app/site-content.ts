@@ -118,21 +118,22 @@ export const projects: Project[] = [
   },
   {
     slug: 'open-curriculum-cn',
-    name: 'Open Curriculum CN',
+    name: '中国 K12 新课标知识图谱',
     cover: '从一个知识点，\n看见学习路径。',
-    category: '个人实践 / 教育 × AI',
+    category: '个人实践 / 新课标 × AI',
     period: 'INDEPENDENT PROJECT',
     role: '独立发起与构建',
     summary:
-      '从“孩子卡在一个知识点时，前面遗漏了什么”出发，把课标、知识关系与学习路径做成可以公开探索的产品。',
+      '把新课标里的知识点和前后关系，做成一张可以探索的学习地图。',
     result: '从 0 到 1',
     label: '问题定义、设计与公开发布',
     image: '/images/products/open-curriculum-sphere-v1.webp',
-    imageCaption: '中国 K12 知识图谱 · 公开项目视觉',
+    imageCaption: 'Open Curriculum CN · 公开项目视觉',
     caseUrl: '/work/open-curriculum-cn',
     story:
       '从孩子卡在某个知识点时“前面遗漏了什么、下一步该学什么”的问题出发，将课标与知识关系组织为可交互的学习路径。',
-    boundary: '已有公开发布记录，不代表学习效果或商业化验证。',
+    boundary:
+      '基于 2022 版义务教育课程标准，使用 AI 辅助构建，免费开放使用；不代表学习效果或商业化验证。',
     url: 'https://zachsaws.github.io/open-curriculum-cn/',
   },
 ];

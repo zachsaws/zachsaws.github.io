@@ -4,7 +4,7 @@ import Link from 'next/link';
 import CaseNext from '../case-next';
 
 export const metadata: Metadata = {
-  title: 'Open Curriculum CN：找到之前漏了哪一步｜王志成',
+  title: '中国 K12 新课标知识图谱｜王志成',
   description:
     '王志成独立发起并构建的中国 K12 学习路径图谱：从知识卡点出发，把前置关系、诊断与补学路径做成公开产品。',
 };
@@ -49,7 +49,10 @@ export default function OpenCurriculumCase() {
         <section className="case-hero open-case-hero">
           <div className="case-hero-copy">
             <p className="eyebrow">SELECTED WORK 04 / 独立产品 · 教育 × AI</p>
-            <p className="open-product-name">OPEN CURRICULUM CN</p>
+            <p className="open-product-name">
+              中国 K12 新课标知识图谱
+              <small>OPEN CURRICULUM CN</small>
+            </p>
             <h1>找到之前<br />漏了哪一步。</h1>
             <p className="case-title">
               孩子说“不会”，问题可能不在眼前这一题。
