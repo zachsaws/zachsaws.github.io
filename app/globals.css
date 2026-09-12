@@ -656,10 +656,11 @@ details .boundary {
   position: relative;
   z-index: 12;
   display: grid;
-  grid-template-columns: minmax(0, 1.18fr) minmax(300px, 0.82fr);
+  width: min(900px, 100%);
+  grid-template-columns: minmax(0, 1.12fr) minmax(280px, 0.88fr);
   align-items: start;
-  gap: clamp(22px, 3vw, 42px);
-  margin: 64px 2% 0;
+  gap: clamp(20px, 2.5vw, 32px);
+  margin: 64px auto 0;
   background: var(--background);
 }
 .life-panel {
@@ -1060,9 +1061,10 @@ footer {
     height: 240px;
   }
   .life-moments {
+    width: min(520px, 100%);
     grid-template-columns: 1fr;
     gap: 30px;
-    margin: 44px 0 0;
+    margin: 44px auto 0;
   }
   .life-panel {
     padding: 11px 11px 24px;
@@ -2181,8 +2183,10 @@ h2 {
     padding: 23px 22px 25px;
   }
   .life-moments {
+    width: min(310px, 100%);
     grid-template-columns: 1fr;
     gap: 30px;
+    margin-inline: auto;
   }
 }
 
