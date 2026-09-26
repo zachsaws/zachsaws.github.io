@@ -6,27 +6,29 @@ import CaseNext from '../case-next';
 export const metadata: Metadata = {
   title: '中国 K12 新课标知识图谱｜王志成',
   description:
-    '王志成独立发起并构建的中国 K12 学习路径图谱：从知识卡点出发，把前置关系、诊断与补学路径做成公开产品。',
+    '王志成独立发起并构建的中国 K12 知识地图：探索概念关系、阅读讲解与练习自测的公开产品实验。',
 };
+
+const curriculumUrl = process.env.NEXT_PUBLIC_CURRICULUM_URL || 'https://zachsaws.github.io/open-curriculum-cn/';
 
 const productViews = [
   {
     image: '/images/products/open-curriculum/diagnose.webp',
-    step: '01 / DIAGNOSE',
-    title: '先判断卡在哪里',
-    copy: '用一组短题定位当前概念的掌握情况，而不是让用户自己猜问题。',
+    step: '01 / PRACTICE',
+    title: '做几道题，对照答案',
+    copy: '查看这一组题的作答表现，再对照参考答案；不将结果当作正式诊断。',
   },
   {
     image: '/images/products/open-curriculum/funnel.webp',
     step: '02 / TRACE BACK',
-    title: '再向前追溯缺口',
-    copy: '沿着前置关系回看：学会这个知识点之前，究竟需要先会什么。',
+    title: '从一个知识点，找到相关概念',
+    copy: '看看前置、进阶与相关概念；这些关系仍待教育专业人员校验。',
   },
   {
     image: '/images/products/open-curriculum/explore.webp',
     step: '03 / SEE THE SYSTEM',
-    title: '把路径放回全局',
-    copy: '在完整知识网络里看见这一处卡点的位置，以及接下来可以走向哪里。',
+    title: '换个学科，继续探索',
+    copy: '在知识网络里找到这一概念的位置，从兴趣出发继续探索。',
   },
 ];
 
@@ -51,19 +53,20 @@ export default function OpenCurriculumCase() {
             <p className="eyebrow">SELECTED WORK 04 / 独立产品 · 教育 × AI</p>
             <p className="open-product-name">
               中国 K12 新课标知识图谱
-              <small>OPEN CURRICULUM CN</small>
+              <small>免费体验 · 开源项目</small>
             </p>
-            <h1>找到之前<br />漏了哪一步。</h1>
+            <h1>把课标，变成一张<br />可以探索的地图。</h1>
             <p className="case-title">
-              孩子说“不会”，问题可能不在眼前这一题。
+              好用的学习工具，应该有更多人用得上。
             </p>
             <p className="case-lede">
-              我独立发起并构建了一张中国 K12 学习路径图谱：从一个知识卡点出发，
-              看见学之前要会什么、学之后能学什么，再把诊断与补学路径接起来。
+              这是我出于兴趣发起的开源实验。结合教育行业的经验和对 AI 能力的理解，
+              我想试试：原本装在学习机里的「精准学」，能不能免费开放给更多人？
+              当前版本已经可以探索知识关系、阅读讲解与做练习，完整的学习诊断仍在探索中。
             </p>
             <div className="open-cta">
-              <a href="https://zachsaws.github.io/open-curriculum-cn/" target="_blank" rel="noreferrer">
-                体验产品 ↗
+              <a href={curriculumUrl} target="_blank" rel="noreferrer">
+                免费打开知识地图 ↗
               </a>
               <a href="https://github.com/zachsaws/open-curriculum-cn" target="_blank" rel="noreferrer">
                 查看 GitHub ↗
@@ -72,7 +75,7 @@ export default function OpenCurriculumCase() {
           </div>
           <a
             className="open-hero-visual"
-            href="https://zachsaws.github.io/open-curriculum-cn/"
+            href={curriculumUrl}
             target="_blank"
             rel="noreferrer"
             aria-label="打开 Open Curriculum CN 产品"
@@ -86,7 +89,7 @@ export default function OpenCurriculumCase() {
               priority
               unoptimized
             />
-            <span>真实产品界面 / 点击体验 ↗</span>
+            <span>打开地图，开始探索 ↗</span>
           </a>
         </section>
 
@@ -103,8 +106,8 @@ export default function OpenCurriculumCase() {
           </div>
           <div>
             <small>LEARNING SYSTEM</small>
-            <strong>4,736 条学习路径</strong>
-            <p>并连接 9,000+ 道诊断与练习题，开放访问与使用</p>
+            <strong>4,736 条知识关系</strong>
+            <p>包含 AI 辅助整理的练习题；关系与题目仍需教育专业人员校验</p>
           </div>
         </section>
 
@@ -122,7 +125,7 @@ export default function OpenCurriculumCase() {
                 但家长和孩子真正需要回答的是：为什么会卡住，应该先回到哪一步？
               </p>
               <p className="case-quote">
-                产品的起点不是做一张更大的知识图，而是把“之前漏了哪一步”变成一次可以完成的行动。
+                产品的起点不是做一张更大的知识图，而是让知识之间的关系成为可以探索的线索。
               </p>
             </div>
           </div>
@@ -131,8 +134,8 @@ export default function OpenCurriculumCase() {
         <section className="case-section open-positioning">
           <p className="eyebrow">02 / PRODUCT POSITIONING</p>
           <div className="open-positioning-line">
-            <small>ONE-LINE PROMISE</small>
-            <h2>从“不会这一题”，到“知道先补哪里”。</h2>
+            <small>产品想法</small>
+            <h2>从一个知识点，走向它相连的世界。</h2>
           </div>
           <div className="open-message-stack">
             <article>
@@ -145,15 +148,15 @@ export default function OpenCurriculumCase() {
             <article>
               <span>02</span>
               <div>
-                <strong>核心是诊断</strong>
-                <p>用少量问题判断当下掌握情况，把模糊的“不会”变成具体缺口。</p>
+                <strong>练习是自测</strong>
+                <p>用练习观察这组题的作答情况，不把少量题目等同于完整的掌握诊断。</p>
               </div>
             </article>
             <article>
               <span>03</span>
               <div>
-                <strong>结果是下一步</strong>
-                <p>沿前置关系给出补学方向，让用户知道从哪里重新开始。</p>
+                <strong>关系是线索</strong>
+                <p>呈现前置、进阶与相关关系；未经专业复核的关系不作为确定的补学结论。</p>
               </div>
             </article>
           </div>
@@ -164,7 +167,7 @@ export default function OpenCurriculumCase() {
           <div className="case-section-heading">
             <h2>三步，把知识关系变成用户路径。</h2>
             <p>
-              3D 球体负责让人感知知识系统的广度；真正完成用户任务的，是诊断、追溯与补学之间的连接。
+              3D 球体负责让人感知知识系统的广度；概念讲解、知识关系与练习，让探索有了具体的落点。
             </p>
           </div>
           <div className="open-product-gallery">
@@ -206,39 +209,39 @@ export default function OpenCurriculumCase() {
             <li><small>01</small><strong>官方课标</strong><span>确定学科与内容边界</span></li>
             <li><small>02</small><strong>概念结构</strong><span>拆分知识点与前置关系</span></li>
             <li><small>03</small><strong>内容增强</strong><span>补充解释、题目与资源</span></li>
-            <li><small>04</small><strong>交互产品</strong><span>诊断、追溯、练习与探索</span></li>
+            <li><small>04</small><strong>交互产品</strong><span>关系、讲解、练习与探索</span></li>
             <li><small>05</small><strong>公开发布</strong><span>开放访问、仓库与反馈</span></li>
           </ol>
         </section>
 
         <section className="case-section open-market-section">
-          <p className="eyebrow">05 / PRODUCT MARKETING</p>
+          <p className="eyebrow">05 / PRODUCT DECISIONS</p>
           <div className="case-section-heading">
-            <h2>先卖“找到缺口”，再解释背后的知识图谱。</h2>
+            <h2>把可以探索的部分做好，把尚未证明的部分说清。</h2>
             <p>
-              用户购买的不是一套数据结构，而是更少的盲目补课、更清楚的学习起点，以及一条可以继续走的路径。
+              这是一个公开的产品实验：先让知识关系可见，再检验它是否真正有助于理解与学习。
             </p>
           </div>
           <div className="open-marketing-grid">
             <article>
-              <small>HOOK</small>
-              <strong>孩子卡住时，前面到底漏了哪一步？</strong>
-              <p>用真实焦虑建立入口，让家长和学生立刻知道产品与自己有什么关系。</p>
+              <small>探索入口</small>
+              <strong>先看全貌，再从感兴趣的概念进入。</strong>
+              <p>把球体、学科和知识点关系接成一条连续的探索路径。</p>
             </article>
             <article>
-              <small>PROMISE</small>
-              <strong>用一次短诊断，找到应该先补的知识点。</strong>
-              <p>把抽象能力缩成一个可理解、可体验、可完成的产品承诺。</p>
+              <small>练习边界</small>
+              <strong>做几道题，观察这一组的表现。</strong>
+              <p>AI 辅助题目仍待审核；自测结果不代表完整能力评估。</p>
             </article>
             <article>
-              <small>PROOF</small>
-              <strong>14 学科、1,906 个概念、4,736 条路径。</strong>
-              <p>用系统覆盖与真实产品界面证明这不是一张概念图，而是已公开运行的产品。</p>
+              <small>数据边界</small>
+              <strong>规模不是学习效果的证明。</strong>
+              <p>公开结构方便核查与改进，概念和关系的准确性仍需要持续验证。</p>
             </article>
             <article>
-              <small>TRUST</small>
-              <strong>课标来源、开放仓库、可追溯结构。</strong>
-              <p>让使用者能够核查来源，也让教育工作者和开发者可以继续改进。</p>
+              <small>内容来源</small>
+              <strong>公开链接，不等于内容已经开源。</strong>
+              <p>讲解视频链接到原平台，版权归原作者；开源范围以仓库许可证为准。</p>
             </article>
           </div>
         </section>
@@ -251,11 +254,11 @@ export default function OpenCurriculumCase() {
             重新定义真正的问题，再把内容、产品与技术组织成用户能够使用的解决方案。
           </p>
           <p className="case-boundary">
-            边界说明：页面中的学科、概念与路径数量来自当前公开项目；本项目已经公开发布，
+            边界说明：页面中的学科、概念与关系数量来自当前公开项目；本项目已经公开发布，
             但尚未以用户规模、学习效果或商业化收入证明结果，因此这些不作为本案例的成果主张。
           </p>
           <div className="open-reflection-links">
-            <a href="https://zachsaws.github.io/open-curriculum-cn/" target="_blank" rel="noreferrer">体验产品 ↗</a>
+            <a href={curriculumUrl} target="_blank" rel="noreferrer">体验产品 ↗</a>
             <a href="https://github.com/zachsaws/open-curriculum-cn" target="_blank" rel="noreferrer">查看源代码 ↗</a>
           </div>
         </section>

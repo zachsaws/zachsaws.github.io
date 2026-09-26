@@ -54,9 +54,9 @@ export default function Home() {
               <span>在习以为常里，</span>
               <span>重新找到可能。</span>
             </h1>
-            <p className="lead">把反常识的判断，变成真实的市场结果。</p>
+            <p className="lead">从新品起步，到规模增长。</p>
             <p className="intro">
-              长期在教育与消费科技领域，把产品、内容与渠道组合起来，寻找新的增长机会。
+              在学习机、词典笔、单词卡等品类里，我把产品、内容与渠道连起来，带团队做出市场结果。
             </p>
             <div className="actions">
               <a className="paper-button primary" href="#projects">
@@ -74,6 +74,7 @@ export default function Home() {
               <small>WORK / LIFE / NOTES</small>
             </div>
             <PaperScene
+              priority
               image="/images/wang-portrait-v1.webp"
               description="绿外套纸片人物"
             />
@@ -135,7 +136,7 @@ export default function Home() {
                         alt={p.imageCaption || p.name}
                         width={1000}
                         height={600}
-                        loading="eager"
+                        loading="lazy"
                         unoptimized
                       />
                     ) : (
@@ -146,9 +147,6 @@ export default function Home() {
                       </>
                     )}
                   </div>
-                  {p.imageCaption && (
-                    <p className="image-credit">{p.imageCaption}</p>
-                  )}
                   <div className="meta">
                     0{i + 1}　{p.role}
                   </div>
@@ -194,14 +192,15 @@ export default function Home() {
                 <h3>我绕过一段弯路，也拉断过韧带。</h3>
                 <p>
                   少年时的一次课堂冲突，让我用停止学习来回应不公，也为此付出了代价。
-                  后来进入竞技健美操，一次严重的韧带损伤和漫长恢复，
-                  让我很早认识了身体的边界、训练的纪律和重新开始。
+                  后来我去学竞技健美操。高一拉柔韧时，韧带被拉断，整个大腿变紫。
+                  伤好了，还得继续练。那段疼痛，到现在我都记得。
                 </p>
               </article>
             </div>
             <p className="life-afterword">
-              后来，我从尊巴老师走到北京创业，再进入教育与消费科技。
-              路线并不垂直，但同一种习惯一直都在：重新理解问题，再寻找另一种可能。
+              大学时，我在网上学尊巴，再去健身房教课，一小时能拿到 280 元。
+              但做了一段时间，我开始疑惑：销售和服务绑在一起，会不会让教练很难真正服务好学员？
+              毕业后，我去了北京，从创业开始，再进入教育与消费科技行业。
             </p>
           </div>
           <aside className="scene">
@@ -226,14 +225,14 @@ export default function Home() {
                   height={1280}
                   unoptimized
                 />
-                <small>2024 / 跑过终点的瞬间</small>
+                
               </div>
               <div className="life-panel-copy">
                 <p className="eyebrow">03 / RUNNING AS MEDITATION</p>
                 <h3>很多答案，是跑到后半程才出现的。</h3>
                 <p>
-                  我跑步时不听歌。身体重复一件足够简单的事，脑子里的噪声会慢慢退下去。
-                  对我来说，跑步不是逃离无聊，而是主动经过它，重新获得宁静。
+                  跑步很无聊，我却喜欢留着这份无聊，不听歌，也不急着填满它。
+                  跑得久一点，脑子里的噪声会慢慢退下去。对我来说，这是一种冥想。
                 </p>
               </div>
             </article>
@@ -262,10 +261,10 @@ export default function Home() {
                       height={1080}
                       unoptimized
                     />
-                    <span>▶ 播放原视频</span>
+                    <span>一起出去走走 ▶</span>
                   </button>
                 )}
-                <small>原图与原视频 / 遛猫的日常</small>
+                
               </div>
               <div className="life-panel-copy">
                 <p className="eyebrow">04 / TWO INDEPENDENT LIVES</p>

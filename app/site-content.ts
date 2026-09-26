@@ -36,7 +36,7 @@ export const projects: Project[] = [
     period: '2023 — 2026',
     role: 'GTM 团队负责人',
     summary:
-      '接手第一代后续经营，连续负责第二代至第五代；重新组织课程内容与硬件的关系，并把短期达人爆发转成持续的渠道经营。',
+      '把高价值课程装进学习机，会不会影响直播课？我提出这一策略并推动落地。接手第一代后续经营，连续负责第二代至第五代，再用中小达人接住超级达人带来的热度。',
     result: '十亿级',
     label: '所负责业务的年营收规模',
     image: '/images/products/xes-flagship-cutout-v1.webp',
@@ -82,7 +82,7 @@ export const projects: Project[] = [
     period: '2021 — 2023',
     role: '新零售渠道负责人',
     summary:
-      '用户原本是来买课的。我们围绕一个学习需求，把学习笔嵌入课程解决方案，由此打通原本不存在的销售通路。',
+      '一次销售，很难同时讲清课程和硬件。用户是来买课的，我们就以课程为主线，把学习笔放进同一个学习方案，打通新的销售通路。',
     result: '1 亿+',
     label: '新渠道上线首年 GMV',
     image: '/images/products/zyb-learning-pen-white-v1.webp',
@@ -103,7 +103,7 @@ export const projects: Project[] = [
     period: '2022 — 2023',
     role: '品类从 0 到 1 操盘',
     summary:
-      '新品上市初期，先追求市场热度，再追求即时销量；通过达人触达和低价格带切入，同时积累产品内容与渠道关系。',
+      '新品起步，先让更多人谈论它。我们向教育达人持续寄送单词卡，占住低价格带，也给不同定位的品牌留下空间：把品类做大，比独占份额更重要。',
     result: '10 万台+',
     label: '单月销量峰值 · 三个月完成从 0 到 1',
     image: '/images/products/word-card-cutout-v1.webp',
@@ -119,19 +119,19 @@ export const projects: Project[] = [
   {
     slug: 'open-curriculum-cn',
     name: '中国 K12 新课标知识图谱',
-    cover: '从一个知识点，\n看见学习路径。',
+    cover: '从一个知识点，\n看见知识关系。',
     category: '个人实践 / 新课标 × AI',
     period: 'INDEPENDENT PROJECT',
     role: '独立发起与构建',
     summary:
-      '把新课标里的知识点和前后关系，做成一张可以探索的学习地图。',
-    result: '从 0 到 1',
+      '学习机里的「精准学」，能不能让更多人免费用上？出于兴趣，我用 AI 搭起知识地图、讲解与练习，尝试把这个想法做成开源项目。',
+    result: '免费 · 开源',
     label: '问题定义、设计与公开发布',
-    image: '/images/products/open-curriculum-sphere-v1.webp',
+    image: '/images/products/open-curriculum/home.webp',
     imageCaption: 'Open Curriculum CN · 公开项目视觉',
     caseUrl: '/work/open-curriculum-cn',
     story:
-      '从孩子卡在某个知识点时“前面遗漏了什么、下一步该学什么”的问题出发，将课标与知识关系组织为可交互的学习路径。',
+      '从孩子卡在某个知识点时“前面遗漏了什么、下一步该学什么”的问题出发，将课标与知识关系组织为可交互的地图；练习自测用于探索，不替代正式诊断。',
     boundary:
       '基于 2022 版义务教育课程标准，使用 AI 辅助构建，免费开放使用；不代表学习效果或商业化验证。',
     url: 'https://zachsaws.github.io/open-curriculum-cn/',

@@ -3615,3 +3615,28 @@ h2 {
     gap: 16px;
   }
 }
+
+/* Local review: keep chapter portraits visible on phones without a fixed canvas. */
+@media (max-width: 859px) {
+  .spread > .scene {
+    display: block;
+    order: -1;
+    width: min(240px, 62vw);
+    margin: 0 auto 20px;
+  }
+  .spread > .scene .paper-scene { width: 100%; max-width: 240px; }
+  .spread > .scene .paper-scene img { opacity: 1; }
+}
+@media (max-width: 859px) and (prefers-reduced-motion: no-preference) {
+  .spread > .scene .paper-scene.scene-visible img {
+    animation: mobile-paper-arrival 850ms cubic-bezier(.2,.7,.2,1) both;
+    transform-origin: 50% 80%;
+  }
+  @keyframes mobile-paper-arrival {
+    from { transform: translateY(18px) rotate(-5deg) scale(.96); }
+    to { transform: translateY(0) rotate(0) scale(1); }
+  }
+}
+@media (prefers-reduced-motion: reduce) {
+  .paper-scene img { animation: none !important; transition: none !important; }
+}
